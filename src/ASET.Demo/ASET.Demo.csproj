@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net47;net471;net472;net48;net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+</Project>
