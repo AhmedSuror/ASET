@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# CodeRush
+.cr/
+
+# Local
+local/
+*.psd
+*.ai
