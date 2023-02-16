@@ -9,11 +9,24 @@
 	  <FileVersion>0.1</FileVersion>
 	  <Version>0.1-alpha</Version>
 	  <Company>$(Authors)</Company>
-	  <Authors>AhmedSuror</Authors>
+	  <Authors>Ahmed Suror</Authors>
 	  <Description>ETA SDK Library GUI Demo</Description>
 	  <Title>ETA SDK Library GUI Demo</Title>
 	  <Copyright>Copyrights © Ahmed Suror 2009 - 2023</Copyright>
+	  <PackageIcon>Logo-128.png</PackageIcon>
+	  <ApplicationIcon>aset-icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="aset-icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\res\Logo-128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ASET.Core\ASET.Core.csproj" />
