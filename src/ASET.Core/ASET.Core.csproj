@@ -8,19 +8,28 @@
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<FileVersion>0.1</FileVersion>
 		<Version>0.1-alpha</Version>
-		<Title>ETA SDK Library</Title>
-		<Description>A Library that implements the invoicing SDK of the Egyptian Tax Authority.</Description>
+		<Title>ETA invoicing SDK Library</Title>
+		<Description>A Library that implements the invoicing SDK of the Egyptian Tax Authority invoicing system.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Authors>AhmedSuror</Authors>
+		<Authors>Ahmed Suror</Authors>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<Copyright>Copyrights © Ahmed Suror 2009 - 2023</Copyright>
 		<RepositoryUrl>https://github.com/AhmedSuror/ASET</RepositoryUrl>
-		<PackageTags>ETA, tax, egyptian tax authority, authority</PackageTags>
+		<PackageTags>ETA,tax,egyptian tax authority,authority</PackageTags>
 		<Product>$(AssemblyName)</Product>
 		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<PackageProjectUrl>https://github.com/AhmedSuror/ASET</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>Early development stage</PackageReleaseNotes>
+		<PackageIcon>Logo-128.png</PackageIcon>
+		<ApplicationIcon>aset-icon.ico</ApplicationIcon>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="aset-icon.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Document\" />
@@ -33,6 +42,10 @@
 	    <PackagePath>\</PackagePath>
 	  </None>
 	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\res\Logo-128.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
