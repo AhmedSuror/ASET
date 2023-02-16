@@ -5,6 +5,33 @@
     <TargetFrameworks>net47;net471;net472;net48;net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
 	  <ImplicitUsings>disable</ImplicitUsings>
 	  <UseWindowsForms>true</UseWindowsForms>
+	  <AssemblyVersion>0.1</AssemblyVersion>
+	  <FileVersion>0.1</FileVersion>
+	  <Version>0.1-alpha</Version>
+	  <Company>$(Authors)</Company>
+	  <Authors>AhmedSuror</Authors>
+	  <Description>ETA SDK Library GUI Demo</Description>
+	  <Title>ETA SDK Library GUI Demo</Title>
+	  <Copyright>Copyrights © Ahmed Suror 2009 - 2023</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASET.Core\ASET.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 
 </Project>

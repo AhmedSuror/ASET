@@ -5,6 +5,8 @@ namespace ASET.Demo
 {
     internal static class Program
     {
+        public static FrmMain fm;
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace ASET.Demo
 #if NET6_0_OR_GREATER
             ApplicationConfiguration.Initialize();
 #endif
-            Application.Run(new FrmMain());
+            Application.Run(fm = new FrmMain());
         }
     }
 }
