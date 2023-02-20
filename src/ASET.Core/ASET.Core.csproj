@@ -9,7 +9,7 @@
 		<FileVersion>0.1</FileVersion>
 		<Version>0.1-alpha</Version>
 		<Title>ETA invoicing SDK Library</Title>
-		<Description>A Library that implements the invoicing SDK of the Egyptian Tax Authority invoicing system.</Description>
+		<Description>A Library that implements the invoicing SDK of the Egyptian Tax Authority.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Authors>Ahmed Suror</Authors>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -17,7 +17,7 @@
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<Copyright>Copyrights © Ahmed Suror 2009 - 2023</Copyright>
 		<RepositoryUrl>https://github.com/AhmedSuror/ASET</RepositoryUrl>
-		<PackageTags>ETA,tax,egyptian tax authority,authority</PackageTags>
+		<PackageTags>ETA,egyptian tax authority,tax,authority,egypt tax</PackageTags>
 		<Product>$(AssemblyName)</Product>
 		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 		<PackageProjectUrl>https://github.com/AhmedSuror/ASET</PackageProjectUrl>

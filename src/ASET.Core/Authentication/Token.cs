@@ -20,7 +20,9 @@ namespace ASET.Core
 
 namespace ASET.Core.Authentication
 {
-
+    /// <summary>
+    /// A class used for master token generation and manipulation.
+    /// </summary>
     public static class Token
     {
         private const string signature = "/connect/token";
@@ -39,6 +41,9 @@ namespace ASET.Core.Authentication
         private static string _idBaseURI;
         private static string _serviceBaseURI;
 
+        /// <summary>
+        /// The main HttpClient of the library.
+        /// </summary>
         public static HttpClient HttpClient { get => _httpClient; }
         /// <summary>
         /// The vault that holds user secrets for ETA Authentication.
@@ -120,7 +125,7 @@ namespace ASET.Core.Authentication
         /// </summary>
         public static event EventHandler TokenDestroyed;
         /// <summary>
-        /// Occurs each second passed from the lifetime of the generated token.
+        /// Fires each second passed from the lifetime of the generated token.
         /// </summary>
         public static event EventHandler<LifeSpanEventArgs> LifeSpanChanged;
 

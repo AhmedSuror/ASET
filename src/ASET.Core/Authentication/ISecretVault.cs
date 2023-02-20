@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace ASET.Core.Authentication
 {
+    /// <summary>
+    /// The vault that holds user data and secrets for ETA Authentication.
+    /// </summary>
     public interface ISecretVault
     {
         Task<string> GetClientId();
